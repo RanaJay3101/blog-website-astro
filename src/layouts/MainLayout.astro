@@ -1,0 +1,19 @@
+---
+import MainHead from "./MainHead.astro";
+
+
+const {title="Default tile",description="This is default description"} = Astro.props;
+
+
+---
+
+
+    <html lang="en">
+	<MainHead {title} {description} />
+	<body>
+		<slot>
+            Nothing done yet..
+        </slot>
+	</body>
+</html>
+
