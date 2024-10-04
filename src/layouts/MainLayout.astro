@@ -1,6 +1,9 @@
 ---
 import MainHead from "./MainHead.astro";
 
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+
 
 const {title="Default tile",description="This is default description"} = Astro.props;
 
@@ -14,6 +17,10 @@ const {title="Default tile",description="This is default description"} = Astro.p
 		<slot>
             Nothing done yet..
         </slot>
+
+        <Footer/>
 	</body>
 </html>
+
+
 
